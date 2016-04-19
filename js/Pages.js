@@ -14,17 +14,48 @@ var showUserInfo = function(){
 };
 
 var addAcctButtons = function(){
-  $div = document.getElementById("user_account");
+  var $div = document.getElementById('user_account');
+  var $log = document.createElement('p');
+  $log.innerHTML = 'Login';
+  $log.addEventListener('click',function(ev){
+      
+  });
   
+  var $sign = document.createElement('p');
+  $sign.innerHTML = 'Sign Up';
+  $sign.addEventListener('click',function(ev){
+      
+  });
   
-  
-  
+};
+
+
+
+
+var displayLoginInfo = function(){
+    
 };
 
 var displayUser = function(){
     
 };
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var displaySearchBar = function(){
+    
+// };
 
 var appStart = function(){
     
