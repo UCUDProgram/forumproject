@@ -6,46 +6,165 @@
     </head>
     <body>
         
-        <!-- Home Screen for the Forum & List of topics -->
+         <!--Container for user Account -->
+        <div id="user_account">
+            <button type = "button" id ="logIn">Login</button>
+            <button type = "button" id ="register_Acct">Sign Up</button>
+            <button type = "button" id ="new_Topic">New Topic</button>
+            <button type = "button" id ="new_Post">New Post</button>
+            <button type = "button" id ="new_Comment">New Comment</button>
+        </div>
+        
+        <!--Container for Logging into an account -->
+        <div id="user" class="hidden">
+            <div id = "input_block">
+                <label for="uname">Username: </label>
+                <input type = "text" id = "uname"/>
+            </div> 
+            <div id ="input_block">
+                <label for="pword">Password: </label>
+                <input type = "text" id = "pword"/>
+            </div>
+            <div id = "button_block">
+                <button type = "button" id = "loginSubmit">Login</button>
+                <button type = "button" id = "registration">Register for a Free Account</button>
+                <button type = "button" id = "forumBack">Back</button>
+            </div>
+        </div>
+        
+        <!--Container for Registering for a new account -->
+         <div id="register" class="hidden">
+            <div id="input_block">
+                <label for="first">First Name: </label>
+                <input type = "text" id = "first"/>
+            </div>
+            
+            <div id="input_block">
+                <label for="last">Last Name: </label>
+                <input type = "text" id = "last"/>
+            </div>
+            
+            <div id="input_block">
+                <label for="contact">Contact: </label>
+                <input type = "text" id = "contact"/>
+            </div>
+            
+            <div id="input_block">
+                <label for="new_user">Username: </label>
+                <input type = "text" id = "new_user"/>
+            </div>
+            
+            <div id ="input_block">
+                <label for="new_pwd">Password: </label>
+                <input type = "text" id = "new_pwd"/>
+            </div> 
+            
+            <div id = "input_block">
+                <label for="new_pwd_verify">Password Verification: </label>
+                <input type = "text" id = "new_pwd_verify"/>
+            </div>
+            
+            <div id="input_block">
+                <label for="authorStat">Profile Type: </label>
+                <select name = "authorStat">
+                    <option value="Author">Author</option>
+                    <option value="User">User</option>
+                </select> 
+            </div>
+            
+            <div id = "button_block">
+                <button type = "button" id = "registerSubmit">Submit</button>
+                <button type = "button" id = "registerBack">Back</button>
+            </div>
+            
+        </div>
+        
+        <!--Container for Creating a new Topic -->
+         <div id="newTopic" class ="hidden">
+            <div id="input_block">
+                <label for="topicTitle">Topic Name: </label>
+                <input type = "text" id = "topicName"/>
+            </div>
+            
+            <div id ="topicAuthor"></div>
+            
+            <div id = "button_block">
+                <button type = "button" id = "submitTopic">Create Topic</button>
+                <button type = "button" id = "topicBack">Back</button>
+            </div>
+        </div>
+        
+        <!--Container for Creating a new Post -->
+         <div id="newPost" class ="hidden">
+            <div id="input_block">
+                <label for="postTitle">Post Title: </label>
+                <input type = "text" id = "postName"/>
+            </div>
+            
+            <div id="postAuthor"></div>
+            
+             <textarea  id="postText" rows="10" cols="60"></textarea>
+            
+            <div id = "button_block">
+                <button type = "button" id = "submitPost">Submit</button>
+                <button type = "button" id = "postBack">Back</button>
+            </div>
+        </div>
+        
+         <!--Container for Creating a new Comment -->
+         <div id="newComment" class ="hidden">
+            <div id = "commentAuthor"></div>
+
+             <textarea  id="commentText" rows="10" cols="60"></textarea>
+            
+            <div id = "button_block">
+                <button type = "button" id = "submitComment">Submit</button>
+                <button type = "button" id = "commentBack">Back</button>
+            </div>
+        </div>
+        
+        
+        
+         <!-- Home Screen for the Forum & List of topics -->
         <div id="home">
-            <div id="topicList"></div>
+            <div id="topList"></div>
         </div>
         
         <!-- Home Screen for Post -->
-        <div id="posts"class="hidden">
+        <div id="posts" class="hidden">
             <div id="postList"></div>
+            
+            <div id = "button_block">
+                <button type = "button" id = "topicReturn">Return to Topics</button>
+            </div>
+        </div>
+        
+         <!--Container for comments -->
+        <div id="comments" class="hidden">
+            <div id="commentList"></div>
         </div>
         
         <!-- Home Screen for a post-->
-        <div id="post"class="hidden">
-        </div>
-        
-        <!--Container for comments -->
-        <div id="comments"class="hidden">
-        </div>
-        
-        <!--Container for the search bar -->
-        <div id="searchBar" class = "hidden">
-            <label for="search">Search: </label>
-            <input type = "text" id = "search"/>
-            <label for="searchParam">Where to Search: </label>
-            <input type = "radio" id = "searchParam" value="Topic"/>
-            <input type = "radio" id = "searchParam" value="Post"/>
-            <input type = "radio" id = "searchParam" value="Comment"/>
+        <div id="post" class="hidden">
+            <div id="indPostTitle"></div>
+            <div id="indPostAuthor"></div>
+            <div id="indPostText"></div>
             
-            <button type = "button" id = "searchLaunch">Search</button>
+            <div id = "button_block">
+                <button type = "button" id = "indPostBack">Return to Posts</button>
+            </div>
         </div>
         
-        <!--Container for Page buttons-->
-        <div id="pageScroll">
+       
+        
+        
+        <!--Container for Edit Buttons-->
+        <div id="edit_buttons">
         </div>
         
-        <!--Container for user -->
-        <div id="user_account" class = "hidden">
+        <!--Container for Edit Buttons-->
+        <div id="TopicButtons">
         </div>
-        
-        <!--Container for -->
-        
         
     </body>
 </html>    

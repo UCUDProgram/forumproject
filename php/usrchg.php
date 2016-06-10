@@ -12,7 +12,10 @@ $new_user = $payload->new_username;
 $dbhandle = new PDO("sqlite:accounts.sqlite") or die("Failed to open DB");
      if (!$dbhandle) die ($error);
    
-
+    $query = "UPDATE Users SET username = '$new_user' WHERE Username='$user'";
+    $statement = $dbhandle->prepare($query);
+    $statement->execute();
+    $message = "Your username has successfully been changed.";
 
 
 

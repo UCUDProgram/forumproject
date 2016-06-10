@@ -8,6 +8,22 @@ var contactInfo = "";
 var status = "";
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var loadProfileInfo = function(){
     var URL = "https://forum-project-ucudprogram-1.c9users.io/php/login.php";
   var xhr = new XMLHttpRequest();

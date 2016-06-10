@@ -1,3 +1,17 @@
+.input{
+    width:150px;
+}    
+
 .hidden{
     display:none;
+    /*display:inline;*/
+}
+
+.button_block{
+    display:inline-block;
+}
+
+.input_block{
+    display: block;
+    width:300;
 }
